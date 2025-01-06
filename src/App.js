@@ -1,9 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import FirstComp from './components/FirstComp';
+import ClsComp from './components/ClsComp';
+import SecondComp from './components/SecondComp';
 
 function App() {
   return (
     <div className="App">
+      <FirstComp />
+      <ClsComp />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +23,8 @@ function App() {
           Google
         </a>
       </header>
+      <SecondComp />
+      
     </div>
   );
 }
