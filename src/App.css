@@ -69,6 +69,46 @@
   font-size: calc(10px + 2vmin);
   color: rgb(6, 4, 4);
 }
+.FirstComp-header2{
+  background: linear-gradient(
+  to left, 
+  #ff5733 0%,       /* First color starts */
+  #1f618d 14.28%,   /* Second color starts */
+  #581845 28.56%,   /* Third color starts */
+  #5dade2 42.84%,   /* Fourth color starts */
+  #900c3f 57.12%,   /* Fifth color starts */
+  #ffc300 71.4%,    /* Sixth color starts */
+  #0e803e 85.68%,   /* Seventh color starts */
+  #ff5733 100%      /* Repeat or loop the colors if needed */
+);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(6, 4, 4);
+}
+.dummy{
+  background: linear-gradient(
+  to left, 
+  #ff5733 0%,       /* First color starts */
+  #1f618d 14.28%,   /* Second color starts */
+  #581845 28.56%,   /* Third color starts */
+  #5dade2 42.84%,   /* Fourth color starts */
+  #900c3f 57.12%,   /* Fifth color starts */
+  #ffc300 71.4%,    /* Sixth color starts */
+  #0e803e 85.68%,   /* Seventh color starts */
+  #ff5733 100%      /* Repeat or loop the colors if needed */
+);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(2px + 2vmin);
+  color: rgb(6, 4, 4);
+}
 
 .news-ticker {
   overflow: hidden; /* Hide overflowing content */
@@ -76,6 +116,7 @@
   box-sizing: border-box;
   width: 100%; /* Full-width container */
   border: 1px solid #ccc; /* Optional border for visual clarity */
+  font-size:calc(10px +2vmin);
 }
 
 .news-ticker p {
