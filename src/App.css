@@ -17,22 +17,18 @@
   /*background-color: #0e803e; */
   background: linear-gradient(
     to right, 
-    #0e803e 0%,      /* First color starts at 0% */
-    #0e803e 14.28%,  /* First color ends at 14.28% */
-    #ff5733 14.28%,  /* Second color starts */
-    #ff5733 28.56%,  /* Second color ends */
+    #ff5733 0%,      /* First color starts at 0% */
+    #ffffff 14.28%,  /* First color ends at 14.28% */
+    #0e803e 28.56%,  /* Second color ends */
     #900c3f 28.56%,  /* Third color starts */
-    #900c3f 42.84%,  /* Third color ends */
     #ffc300 42.84%,  /* Fourth color starts */
     #ffc300 57.12%,  /* Fourth color ends */
-    #581845 57.12%,  /* Fifth color starts */
     #581845 71.4%,   /* Fifth color ends */
-    #1f618d 71.4%,   /* Sixth color starts */
-    #1f618d 85.68%,  /* Sixth color ends */
-    #5dade2 85.68%,  /* Seventh color starts */
+    #8d1f7d 71.4%,   /* Sixth color starts */
+    #bfc4b3 85.68%,  /* Seventh color starts */
     #5dade2 100%     /* Seventh color ends */
   );
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,5 +47,49 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+.FirstComp-header{
+  background: linear-gradient(
+  to right, 
+  #ff5733 0%,       /* First color starts */
+  #1f618d 14.28%,   /* Second color starts */
+  #581845 28.56%,   /* Third color starts */
+  #5dade2 42.84%,   /* Fourth color starts */
+  #900c3f 57.12%,   /* Fifth color starts */
+  #ffc300 71.4%,    /* Sixth color starts */
+  #0e803e 85.68%,   /* Seventh color starts */
+  #ff5733 100%      /* Repeat or loop the colors if needed */
+);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(6, 4, 4);
+}
+
+.news-ticker {
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent text wrapping */
+  box-sizing: border-box;
+  width: 100%; /* Full-width container */
+  border: 1px solid #ccc; /* Optional border for visual clarity */
+}
+
+.news-ticker p {
+  display: inline-block; /* Allow animation */
+  padding: 0 20px; /* Optional padding */
+  white-space: nowrap; /* Prevent text wrapping */
+  animation: scroll-right 180s linear infinite; /* Animation settings */
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(300%); /* Start outside the viewport on the right */
+  }
+  to {
+    transform: translateX(-300%); /* Move outside the viewport on the left */
   }
 }
