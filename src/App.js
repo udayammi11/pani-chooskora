@@ -4,6 +4,7 @@ import FirstComp from './components/FirstComp';
 import ClsComp from './components/ClsComp';
 import SecondComp from './components/SecondComp';
 import Hello from './components/Hello';
+import CircularProgress from "./CircularProgress";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           rel="noopener noreferrer">Google</a>
       </header>
       <SecondComp />
+        <div style={{ display: "flex", justifyContent: "center", marginTop: "50px" }}>
+        <CircularProgress duration={60} />
+      </div>
     </div>
   );
 }
