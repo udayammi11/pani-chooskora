@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 class ClsComp extends Component {
     render(){
         return(
-        <div class="news-ticker">
+        <div className="news-ticker">
             <p>Class Component 1.	Container (news-ticker):	overflow: hidden; ensures that the content outside the container is hidden, creating the scrolling effect.
 	2.	Text (p):white-space: nowrap; prevents text from wrapping to a new line. animation: scroll-right 10s linear infinite; animates the text from right to left over 10 seconds in an infinite loop.
 	3.	Keyframes (@keyframes scroll-right):	transform: translateX(100%); starts the text just outside the right edge of the viewport. transform: translateX(-100%); moves it completely past the left edge.

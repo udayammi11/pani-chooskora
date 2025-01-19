@@ -5,10 +5,18 @@ import ClsComp from './components/ClsComp';
 import SecondComp from './components/SecondComp';
 import Hello from './components/Hello';
 import CircularProgress from "./CircularProgress";
+import { CompanyProvider } from "./CompanyContext";
+import HomePage from "./HomePage";
+import Settings from "./Settings";
+
 
 function App() {
   return (
     <div className="App">
+      <CompanyProvider>
+            <HomePage />
+            <Settings />
+        </CompanyProvider>
       <FirstComp className="FirstComp-header" name="Ais" >
         <p>Children</p>
         </FirstComp>

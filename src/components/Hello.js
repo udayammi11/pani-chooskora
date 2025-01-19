@@ -7,7 +7,7 @@ const Hello=()=>{
     // )
     //with out JSX
     return React.createElement(
-        'div',{id:'asd', class:'dummy'},React.createElement('h1',null,'With out JSX')
+        'div',{id:'asd', className:'dummy'},React.createElement('h1',null,'With out JSX')
     )    
 }
 export default Hello
