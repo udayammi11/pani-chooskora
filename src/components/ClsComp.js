@@ -12,6 +12,7 @@ class ClsComp extends Component {
 	7.   asdfghjkl.	
 	8.   srdtfghjkl
 			9.   fdgfhjkl
+				sdfghjk
     </p>
         </div>)
     }
