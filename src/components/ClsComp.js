@@ -9,7 +9,7 @@ class ClsComp extends Component {
 	4.	Animation Speed:The 10s in animation defines how long it takes for one full scroll. Adjust this value to make the text scroll faster or slower.
 	5.  Just added.
 	6. so called hero.
-			
+	7>asdfghjkl.		
     </p>
         </div>)
     }
